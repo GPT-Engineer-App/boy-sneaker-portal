@@ -22,17 +22,14 @@ const Index = () => {
           <Stack textAlign={"center"} spacing={4}>
             <Heading>Discover Your Perfect Sneakers</Heading>
             <Text fontSize={"lg"}>Explore our exclusive collection and find the pair that fits you best.</Text>
-            <Button
-              colorScheme={"blue"}
-              bg={"blue.400"}
-              rounded={"full"}
-              px={6}
-              _hover={{
-                bg: "blue.500",
-              }}
-            >
-              Shop Now
-            </Button>
+            <Stack direction={"row"} spacing={4}>
+              <Button as="a" href="/login" colorScheme={"blue"} bg={"blue.400"} rounded={"full"} px={6} _hover={{ bg: "blue.500" }}>
+                Login
+              </Button>
+              <Button as="a" href="/signup" colorScheme={"blue"} variant="outline" rounded={"full"} px={6} _hover={{ bg: "blue.200" }}>
+                Sign Up
+              </Button>
+            </Stack>
           </Stack>
         </Flex>
 
