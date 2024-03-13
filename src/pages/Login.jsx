@@ -13,7 +13,7 @@ const Login = () => {
           <FormLabel>Password</FormLabel>
           <Input type="password" />
         </FormControl>
-        <Button width="full" mt={4} as="a" href="/products">
+        <Button width="full" mt={4} type="submit" formAction="/products">
           Login
         </Button>
       </form>
